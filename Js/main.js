@@ -73,7 +73,20 @@ window.onload = function() {
 };
 
 
+// Select the HTML element you want to lock the viewpoint onto
+const element = document.querySelector('div._NewBranch.d_f');
 
+// Get the position and size of the element
+const elementRect = element.getBoundingClientRect();
+
+// Calculate the center point of the element
+const centerX = elementRect.left + elementRect.width / 2;
+const centerY = elementRect.top + elementRect.height / 2;
+
+// Set the camera position to center on the element
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+camera.position.set(centerX, centerY, 500);
+camera.lookAt(centerX, centerY, 0);
 
 
 

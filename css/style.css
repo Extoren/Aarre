@@ -54,19 +54,24 @@ section {
 	z-index: 0;
 }
 
+
 /* ----------------[ The Tree ]---------------- */
 
 	/* ==============  // Mapping child  ============== */
+
 	.treeMainContainer {
 		margin: 0 auto;
 	    max-width: 100%;
 	    width: 100vw;
-		margin-left: 50%;
+		margin-left: 10%;
+		margin-top: 20%;
 	}
+
+	
+
 	.treeContainer {
 		width: 100%;
 		position: relative;
-		padding: 50px;
 		z-index: 0;
 	}
 	._treeRoot {
@@ -83,7 +88,6 @@ section {
 	    position: relative;
 	    min-height: 20px;
 	    z-index: 0;
-		margin-left: 0%;
 	}
 	._treeRaw {
 	    position: relative;
@@ -115,6 +119,7 @@ section {
 	    margin-right: 10px;
 	    z-index: 0;
 	}
+
 	._treeData:last-child {margin-right: 0; }
 	._NewBranch {
 		position: relative;

@@ -171,3 +171,15 @@ function openReviewMenu() {
     const reviewMenu = document.querySelector('.review-menu');
     reviewMenu.style.display = 'none';
   }
+
+
+
+
+
+
+
+
+
+
+
+
